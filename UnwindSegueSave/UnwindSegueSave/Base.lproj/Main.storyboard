@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eUx-ZB-QAm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UnwindSegueSave" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="pTB-Li-gIY">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="fNj-qJ-zXF"/>
+                                    <constraint firstAttribute="width" constant="130" id="zX9-fr-dhI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oN-CF-TLU">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="8Gx-2j-97V"/>
+                                    <constraint firstAttribute="height" constant="25" id="vwB-zt-V2u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8oN-CF-TLU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6fe-vN-SLk"/>
+                            <constraint firstItem="8oN-CF-TLU" firstAttribute="top" secondItem="pTB-Li-gIY" secondAttribute="bottom" constant="40" id="8nv-le-hOT"/>
+                            <constraint firstItem="pTB-Li-gIY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pdy-Is-XBs"/>
+                            <constraint firstItem="pTB-Li-gIY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-90" id="xH8-5G-8e3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="zTI-sa-lda">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="8fW-oz-hlG">
+                            <connections>
+                                <action selector="onEditButton:" destination="BYZ-38-t0r" id="lmy-XV-L8W"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="userImage" destination="pTB-Li-gIY" id="Sr0-ec-yTR"/>
+                        <outlet property="userName" destination="8oN-CF-TLU" id="tAf-S4-w8u"/>
+                        <segue destination="dMo-Gf-r8H" kind="show" identifier="vcToVC2" id="Y9s-0S-JLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="358"/>
+        </scene>
+        <!--Edit-->
+        <scene sceneID="eOU-Mn-Ldq">
+            <objects>
+                <viewController id="dMo-Gf-r8H" customClass="SecondViewController" customModule="UnwindSegueSave" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MCf-l3-Zpv"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Da-88-f7F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aAd-op-tqQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="I5u-Ga-Qbc">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Dhg-is-oa7"/>
+                                    <constraint firstAttribute="height" constant="130" id="TV8-jy-gV7"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pAG-u8-gZL" appends="YES" id="ZVj-K0-lIa"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="userName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q7T-pC-mWp">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="TQK-d7-a68"/>
+                                    <constraint firstAttribute="height" constant="30" id="uaN-r1-rTl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I5u-Ga-Qbc" firstAttribute="centerX" secondItem="aAd-op-tqQ" secondAttribute="centerX" id="P39-55-Xst"/>
+                            <constraint firstItem="Q7T-pC-mWp" firstAttribute="centerX" secondItem="aAd-op-tqQ" secondAttribute="centerX" id="TcM-sd-cBI"/>
+                            <constraint firstItem="Q7T-pC-mWp" firstAttribute="top" secondItem="I5u-Ga-Qbc" secondAttribute="bottom" constant="40" id="mcq-mO-fTc"/>
+                            <constraint firstItem="I5u-Ga-Qbc" firstAttribute="centerY" secondItem="aAd-op-tqQ" secondAttribute="centerY" constant="-90" id="xag-kV-M1e"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Edit" id="Wew-8I-38M">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="jEs-u2-WlY">
+                            <connections>
+                                <action selector="onCancelButton:" destination="dMo-Gf-r8H" id="V3Q-dz-Q9f"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="uVi-dp-ex0">
+                            <connections>
+                                <segue destination="2xy-2Q-DWE" kind="unwind" unwindAction="unwindToPreviosVC:" id="Gpy-rx-p07"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="saveButton" destination="uVi-dp-ex0" id="Og7-Cf-UzR"/>
+                        <outlet property="userImage" destination="I5u-Ga-Qbc" id="4oq-Fo-Dba"/>
+                        <outlet property="userNameTextField" destination="Q7T-pC-mWp" id="4qJ-g5-YQR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvV-sb-3eW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2xy-2Q-DWE" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="pAG-u8-gZL">
+                    <connections>
+                        <action selector="onImageTap:" destination="dMo-Gf-r8H" id="x3b-wr-EY9"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="823" y="359"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qMS-fv-h9h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eUx-ZB-QAm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WVH-cL-PfG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UDa-RF-ecz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rC7-xh-hms" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1007" y="358"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defaultPhoto" width="540" height="540"/>
+    </resources>
+</document>
