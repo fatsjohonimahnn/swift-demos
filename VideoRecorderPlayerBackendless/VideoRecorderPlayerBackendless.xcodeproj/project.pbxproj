@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7ABDDA21DAD384E1437A11BA /* Pods_VideoRecorderPlayerBackendless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BA6BDC1835D11199D0FCA95 /* Pods_VideoRecorderPlayerBackendless.framework */; };
+		7E0D5F8D1DA92F9300F0D276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D5F8C1DA92F9300F0D276 /* AppDelegate.swift */; };
+		7E0D5F8F1DA92F9300F0D276 /* RecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D5F8E1DA92F9300F0D276 /* RecordingVC.swift */; };
+		7E0D5F921DA92F9300F0D276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D5F901DA92F9300F0D276 /* Main.storyboard */; };
+		7E0D5F941DA92F9300F0D276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D5F931DA92F9300F0D276 /* Assets.xcassets */; };
+		7E0D5F971DA92F9300F0D276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D5F951DA92F9300F0D276 /* LaunchScreen.storyboard */; };
+		7E0D5F9F1DA9364C00F0D276 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0D5F9E1DA9364C00F0D276 /* SystemConfiguration.framework */; };
+		7E0D5FA11DA9365E00F0D276 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0D5FA01DA9365E00F0D276 /* libz.tbd */; };
+		7E0D5FA31DA9366D00F0D276 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0D5FA21DA9366D00F0D276 /* libsqlite3.tbd */; };
+		7E0D5FA51DA93C6100F0D276 /* PlaybackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D5FA41DA93C6100F0D276 /* PlaybackVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33889E269B84CA4813EC69AB /* Pods-VideoRecorderPlayerBackendless.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoRecorderPlayerBackendless.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoRecorderPlayerBackendless/Pods-VideoRecorderPlayerBackendless.release.xcconfig"; sourceTree = "<group>"; };
+		6BA6BDC1835D11199D0FCA95 /* Pods_VideoRecorderPlayerBackendless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoRecorderPlayerBackendless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0D5F891DA92F9300F0D276 /* VideoRecorderPlayerBackendless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoRecorderPlayerBackendless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0D5F8C1DA92F9300F0D276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E0D5F8E1DA92F9300F0D276 /* RecordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingVC.swift; sourceTree = "<group>"; };
+		7E0D5F911DA92F9300F0D276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E0D5F931DA92F9300F0D276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E0D5F961DA92F9300F0D276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E0D5F981DA92F9300F0D276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E0D5F9E1DA9364C00F0D276 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7E0D5FA01DA9365E00F0D276 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7E0D5FA21DA9366D00F0D276 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7E0D5FA41DA93C6100F0D276 /* PlaybackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaybackVC.swift; sourceTree = "<group>"; };
+		BB0633A3FA3DE0A5C65BC741 /* Pods-VideoRecorderPlayerBackendless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoRecorderPlayerBackendless.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoRecorderPlayerBackendless/Pods-VideoRecorderPlayerBackendless.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E0D5F861DA92F9300F0D276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0D5FA31DA9366D00F0D276 /* libsqlite3.tbd in Frameworks */,
+				7E0D5FA11DA9365E00F0D276 /* libz.tbd in Frameworks */,
+				7E0D5F9F1DA9364C00F0D276 /* SystemConfiguration.framework in Frameworks */,
+				7ABDDA21DAD384E1437A11BA /* Pods_VideoRecorderPlayerBackendless.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CD7823ADF5C352745836866 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E0D5FA21DA9366D00F0D276 /* libsqlite3.tbd */,
+				7E0D5FA01DA9365E00F0D276 /* libz.tbd */,
+				7E0D5F9E1DA9364C00F0D276 /* SystemConfiguration.framework */,
+				6BA6BDC1835D11199D0FCA95 /* Pods_VideoRecorderPlayerBackendless.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CE28D6D1CF1DCFC65758449 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB0633A3FA3DE0A5C65BC741 /* Pods-VideoRecorderPlayerBackendless.debug.xcconfig */,
+				33889E269B84CA4813EC69AB /* Pods-VideoRecorderPlayerBackendless.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E0D5F801DA92F9300F0D276 = {
+			isa = PBXGroup;
+			children = (
+				7E0D5F8B1DA92F9300F0D276 /* VideoRecorderPlayerBackendless */,
+				7E0D5F8A1DA92F9300F0D276 /* Products */,
+				4CE28D6D1CF1DCFC65758449 /* Pods */,
+				0CD7823ADF5C352745836866 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E0D5F8A1DA92F9300F0D276 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E0D5F891DA92F9300F0D276 /* VideoRecorderPlayerBackendless.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E0D5F8B1DA92F9300F0D276 /* VideoRecorderPlayerBackendless */ = {
+			isa = PBXGroup;
+			children = (
+				7E0D5F8C1DA92F9300F0D276 /* AppDelegate.swift */,
+				7E0D5F8E1DA92F9300F0D276 /* RecordingVC.swift */,
+				7E0D5FA41DA93C6100F0D276 /* PlaybackVC.swift */,
+				7E0D5F901DA92F9300F0D276 /* Main.storyboard */,
+				7E0D5F931DA92F9300F0D276 /* Assets.xcassets */,
+				7E0D5F951DA92F9300F0D276 /* LaunchScreen.storyboard */,
+				7E0D5F981DA92F9300F0D276 /* Info.plist */,
+			);
+			path = VideoRecorderPlayerBackendless;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E0D5F881DA92F9300F0D276 /* VideoRecorderPlayerBackendless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0D5F9B1DA92F9300F0D276 /* Build configuration list for PBXNativeTarget "VideoRecorderPlayerBackendless" */;
+			buildPhases = (
+				900801691624AB776BDAB10C /* [CP] Check Pods Manifest.lock */,
+				7E0D5F851DA92F9300F0D276 /* Sources */,
+				7E0D5F861DA92F9300F0D276 /* Frameworks */,
+				7E0D5F871DA92F9300F0D276 /* Resources */,
+				F38423E6BDC8241B4921C071 /* [CP] Embed Pods Frameworks */,
+				7EC2C055316FB240B963FD72 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoRecorderPlayerBackendless;
+			productName = VideoRecorderPlayerBackendless;
+			productReference = 7E0D5F891DA92F9300F0D276 /* VideoRecorderPlayerBackendless.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E0D5F811DA92F9300F0D276 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = fatsjohonimahnn;
+				TargetAttributes = {
+					7E0D5F881DA92F9300F0D276 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = MGZJFP2D98;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7E0D5F841DA92F9300F0D276 /* Build configuration list for PBXProject "VideoRecorderPlayerBackendless" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E0D5F801DA92F9300F0D276;
+			productRefGroup = 7E0D5F8A1DA92F9300F0D276 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E0D5F881DA92F9300F0D276 /* VideoRecorderPlayerBackendless */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E0D5F871DA92F9300F0D276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0D5F971DA92F9300F0D276 /* LaunchScreen.storyboard in Resources */,
+				7E0D5F941DA92F9300F0D276 /* Assets.xcassets in Resources */,
+				7E0D5F921DA92F9300F0D276 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EC2C055316FB240B963FD72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoRecorderPlayerBackendless/Pods-VideoRecorderPlayerBackendless-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		900801691624AB776BDAB10C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F38423E6BDC8241B4921C071 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoRecorderPlayerBackendless/Pods-VideoRecorderPlayerBackendless-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E0D5F851DA92F9300F0D276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0D5F8F1DA92F9300F0D276 /* RecordingVC.swift in Sources */,
+				7E0D5FA51DA93C6100F0D276 /* PlaybackVC.swift in Sources */,
+				7E0D5F8D1DA92F9300F0D276 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E0D5F901DA92F9300F0D276 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E0D5F911DA92F9300F0D276 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E0D5F951DA92F9300F0D276 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E0D5F961DA92F9300F0D276 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E0D5F991DA92F9300F0D276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E0D5F9A1DA92F9300F0D276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E0D5F9C1DA92F9300F0D276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0633A3FA3DE0A5C65BC741 /* Pods-VideoRecorderPlayerBackendless.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MGZJFP2D98;
+				INFOPLIST_FILE = VideoRecorderPlayerBackendless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fatsjohonimahnn.VideoRecorderPlayerBackendless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PODS_ROOT}/Headers/Public/Backendless-ios-SDK/Backendless-With-Media-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7E0D5F9D1DA92F9300F0D276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33889E269B84CA4813EC69AB /* Pods-VideoRecorderPlayerBackendless.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MGZJFP2D98;
+				INFOPLIST_FILE = VideoRecorderPlayerBackendless/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fatsjohonimahnn.VideoRecorderPlayerBackendless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PODS_ROOT}/Headers/Public/Backendless-ios-SDK/Backendless-With-Media-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E0D5F841DA92F9300F0D276 /* Build configuration list for PBXProject "VideoRecorderPlayerBackendless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0D5F991DA92F9300F0D276 /* Debug */,
+				7E0D5F9A1DA92F9300F0D276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0D5F9B1DA92F9300F0D276 /* Build configuration list for PBXNativeTarget "VideoRecorderPlayerBackendless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0D5F9C1DA92F9300F0D276 /* Debug */,
+				7E0D5F9D1DA92F9300F0D276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E0D5F811DA92F9300F0D276 /* Project object */;
+}
