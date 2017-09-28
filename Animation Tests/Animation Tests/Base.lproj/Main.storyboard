@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animation_Tests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7C6-co-6m3" userLabel="MenuView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ShortMenuLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCI-bg-fCp">
+                                        <rect key="frame" x="124" y="19.5" width="127" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlD-YS-707" userLabel="MenuButton">
+                                        <rect key="frame" x="337" y="7.5" width="30" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="onMenuPlusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iic-A1-xqE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xlD-YS-707" secondAttribute="trailing" constant="8" id="IZ2-zb-5uI"/>
+                                    <constraint firstItem="LCI-bg-fCp" firstAttribute="centerY" secondItem="7C6-co-6m3" secondAttribute="centerY" constant="0.75" identifier="TitleCenterY" id="TV5-Fj-0Of"/>
+                                    <constraint firstAttribute="height" constant="60" id="ZJA-TH-i4C"/>
+                                    <constraint firstItem="xlD-YS-707" firstAttribute="centerY" secondItem="LCI-bg-fCp" secondAttribute="centerY" id="gK7-YL-28m"/>
+                                    <constraint firstItem="LCI-bg-fCp" firstAttribute="centerX" secondItem="7C6-co-6m3" secondAttribute="centerX" identifier="TitleCenterX" id="oHQ-85-ByB"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiJ-oj-aQO">
+                                <rect key="frame" x="143.5" y="223" width="88" height="30"/>
+                                <state key="normal" title="Show PopVC"/>
+                                <connections>
+                                    <action selector="onPopUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ba7-5d-ggD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7C6-co-6m3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4mv-ED-Zn3"/>
+                            <constraint firstItem="AiJ-oj-aQO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Ge-V5-a99"/>
+                            <constraint firstItem="7C6-co-6m3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TsF-8f-7LK"/>
+                            <constraint firstAttribute="trailing" secondItem="7C6-co-6m3" secondAttribute="trailing" id="sfF-di-8oX"/>
+                            <constraint firstItem="AiJ-oj-aQO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-95.5" id="vpd-HM-gvS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButtonTrailing" destination="IZ2-zb-5uI" id="WJ1-Nx-1Wr"/>
+                        <outlet property="menuHeightConstraint" destination="ZJA-TH-i4C" id="LgN-cX-8tx"/>
+                        <outlet property="menuPlusButton" destination="xlD-YS-707" id="yiA-JK-6qE"/>
+                        <outlet property="menuTitleLabel" destination="LCI-bg-fCp" id="Dvi-Kp-80m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="OSD-S4-f9W">
+            <objects>
+                <viewController storyboardIdentifier="VideoPopUpMenu" id="pI4-P4-izd" customClass="PopUpViewController" customModule="Animation_Tests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JAt-PG-HCc"/>
+                        <viewControllerLayoutGuide type="bottom" id="OD8-bi-irY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eVk-Bk-tmZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0d-Ze-lIe">
+                                <rect key="frame" x="67" y="158" width="240" height="351"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxU-Zk-2Bc">
+                                        <rect key="frame" x="178" y="8" width="54" height="30"/>
+                                        <state key="normal" title="Dismiss"/>
+                                        <connections>
+                                            <action selector="onDismissButton:" destination="pI4-P4-izd" eventType="touchUpInside" id="fut-a0-8BE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="A4Q-KM-N67"/>
+                                    <constraint firstAttribute="trailing" secondItem="pxU-Zk-2Bc" secondAttribute="trailing" constant="8" id="Q3Y-Rp-oip"/>
+                                    <constraint firstAttribute="height" constant="351" id="atw-5v-OdT"/>
+                                    <constraint firstItem="pxU-Zk-2Bc" firstAttribute="top" secondItem="I0d-Ze-lIe" secondAttribute="top" constant="8" id="hiP-j7-2Fv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I0d-Ze-lIe" firstAttribute="centerX" secondItem="eVk-Bk-tmZ" secondAttribute="centerX" id="5Gu-Ge-pDM"/>
+                            <constraint firstItem="I0d-Ze-lIe" firstAttribute="centerY" secondItem="eVk-Bk-tmZ" secondAttribute="centerY" id="PhF-fD-LCH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yh6-sb-8vt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.60000000000002" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
